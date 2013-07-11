@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sn[a]+ke</title>
+    <style>
+      body {
+	  padding:0px;
+	  margin:0px;
+	  background-color:#000;
+          overflow:hidden;
+      }
+      canvas {
+	  padding:0px;
+	  margin:0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id='snake_canvas'>
+      <p>Your browser does not support the canvas element</p>
+    </canvas>
+    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script src="game.js"></script>
+    <script>
+      var game = new Game(document.getElementById('snake_canvas'));
+    </script>
+  </body>
+</html>
